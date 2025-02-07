@@ -10,14 +10,60 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="styles/index.css" />
 
     <title>RNG</title>
   </head>
   <body>
-    <header><img src="" alt="logo" /></header>
-    <main></main>
+    <header><img src="assets/icons/logo.svg" alt="logo" /></header>
+    <main>
+      <div id="instructions" class="main-div">
+        <h2>ONLINE - FREE</h2>
+        <h1>RANDOM NUMBER GENERATOR</h1>
+
+        <div>
+          <img src="assets/icons/bubble.svg" alt="bubble doodle" />
+          <span>How does the number drawer work?</span>
+          <p>
+            The randomizer uses a random number generation algorithm to create
+            numbers within the range specified by the user.
+          </p>
+        </div>
+
+        <div>
+          <img src="assets/icons/bubble.svg" alt="bubble doodle" />
+          <span>Can I choose the range of generated numbers?</span>
+          <p>
+            Yes, you can set the minimum and maximum values ​​for the range of
+            drawn numbers.
+          </p>
+        </div>
+      </div>
+
+      <div id="generator" class="main-div">
+        <div>
+          <h2>I WANT TO DRAW:</h2>
+          <p>
+            set the interval and the quantity of numbers then click "Draw" and
+            see the results on the screen. It is quick and easy!
+          </p>
+        </div>
+
+        <form action="">
+          <label>NUMBERS</label>
+          <input type="number" for="number" />
+          <label>FROM</label>
+          <input type="number" for="min-num" />
+          <label>TO</label>
+          <input type="number" for="max-num" />
+          <input type="checkbox" />
+          <label for="repeat">Do not repeat any number.</label>
+          <button type="">
+            DRAW <img src="assets/icons/draw.svg" alt="arrow pointing right" />
+          </button>
+        </form>
+      </div>
+    </main>
   </body>
 
   <script src="scripts/index.js"></script>

@@ -1,0 +1,13 @@
+#instructions h2 {
+  font: var(--overline);
+  background: linear-gradient(var(--gradient-content));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#instructions h1 {
+  font: var(--display-lg);
+  background: linear-gradient(var(--gradient-title));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
