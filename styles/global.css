@@ -38,6 +38,7 @@
   --sora: "Roboto Flex", sans-serif;
   --roboto-mono: "Roboto Mono", sans-serif;
   --roboto-flex: "Roboto Flex", sans-serif;
+  --inter: "Inter", sans-serif;
 
   /* font size */
   /* sora */
@@ -55,12 +56,32 @@
 
   --label-md: 700 1.25rem/150% var(--roboto-flex);
   --label-sm: 700 1rem/150% var(--roboto-flex);
+
+  /* toggle */
+  --toggle: 400 0.75rem/150% var(--inter);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  background: var(--background-primary);
+  color: var(--content-primary);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-bottom: 9.5rem;
 }
 
 header {

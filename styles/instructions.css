@@ -1,3 +1,6 @@
+/* #instructions {
+} */
+
 #instructions h2 {
   font: var(--overline);
   background: linear-gradient(var(--gradient-content));
@@ -10,4 +13,17 @@
   background: linear-gradient(var(--gradient-title));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#instructions div + div {
+  margin-top: 4rem;
+}
+
+#instructions span {
+  color: var(--color-brand);
+  font: var(--medium);
+}
+
+#instructions p {
+  font: var(--small);
 }

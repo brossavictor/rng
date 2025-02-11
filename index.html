@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles/index.css" />
 
     <title>RNG</title>
@@ -19,7 +20,7 @@
     <main>
       <div id="instructions" class="main-div">
         <h2>ONLINE - FREE</h2>
-        <h1>RANDOM NUMBER GENERATOR</h1>
+        <h1>SORTEADOR DE NÚMEROS</h1>
 
         <div>
           <img src="assets/icons/bubble.svg" alt="bubble doodle" />
@@ -50,15 +51,23 @@
         </div>
 
         <form action="">
-          <label>NUMBERS</label>
-          <input type="number" for="number" />
-          <label>FROM</label>
-          <input type="number" for="min-num" />
-          <label>TO</label>
-          <input type="number" for="max-num" />
-          <input type="checkbox" />
-          <label for="repeat">Do not repeat any number.</label>
-          <button type="">
+          <div class="grid">
+            <label id="numbers">NUMBERS</label>
+            <input id="num" type="number" for="number" />
+
+            <label id="from">FROM</label>
+            <input id="min" type="number" for="min" />
+
+            <label id="to">TO</label>
+            <input id="max" type="number" for="max" />
+          </div>
+
+          <div id="toggle">
+            <input type="checkbox" />
+            <label for="repeat">Do not repeat any number.</label>
+          </div>
+
+          <button id="button" type="">
             DRAW <img src="assets/icons/draw.svg" alt="arrow pointing right" />
           </button>
         </form>

@@ -1,0 +1,91 @@
+#generator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 6.75rem;
+  padding-block: 2.125rem;
+}
+
+#generator > div {
+  margin-bottom: 2.5rem;
+}
+
+#generator h2 {
+  font: var(--label-md);
+}
+
+#generator p {
+  font: var(--large);
+}
+
+form {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "numbers from to"
+    "num min max";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr;
+
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.grid label,
+.grid input {
+  width: 5.375rem;
+}
+
+.grid label {
+  font: var(--label-sm);
+}
+
+.grid input {
+  font: var(--display-sm);
+}
+
+#numbers {
+  grid-area: numbers;
+}
+
+#from {
+  grid-area: from;
+}
+
+#to {
+  grid-area: to;
+}
+
+#num {
+  grid-area: num;
+}
+
+#min {
+  grid-area: min;
+}
+
+#max {
+  grid-area: max;
+}
+
+#toggle {
+  display: flex;
+  align-items: center;
+
+  margin-block: 1.25rem;
+}
+
+#toggle label {
+  font: var(--toggle);
+}
+
+button {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+}
